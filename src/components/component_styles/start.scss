@@ -1,0 +1,21 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+#monography-intro-container {
+    text-align: center;
+    margin-top: 300px;
+
+    img {
+        max-width: 800px;
+        width: 800px;
+    }
+
+    h1 {
+        margin-top: 200px;
+        font-family: Arial Black;
+        font-weight: bolder;
+    }
+}

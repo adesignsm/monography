@@ -1,0 +1,29 @@
+#selection-container {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding-top: 170px;
+}
+
+#selection-container h1 {
+  font-family: Arial Black;
+}
+
+#frame-count-container h1, #frame-color-container h1 {
+  text-align: center;
+}
+
+#frame-count-container ul, #frame-color-container ul {
+  width: 100%;
+  text-align: center;
+  margin-left: 0px;
+}
+
+#frame-count-container ul li, #frame-color-container ul li {
+  font-family: Arial Black;
+  font-size: 180px;
+  display: inline;
+  margin-right: 100px;
+}
+/*# sourceMappingURL=selection.css.map */
