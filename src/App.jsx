@@ -6,6 +6,7 @@ const App = () => {
 
     const [startPageState, setStartPageState] = useState(true);
     const [selectionPageState, setSelectionPageState] = useState(false);
+    const [PHOTO_PROPS, SET_PHOTO_PROPS] = useState([]);
 
     useEffect(() => {
         setStartPageState(true);
