@@ -1,0 +1,58 @@
+#photoshoot-header {
+  padding: 20px;
+}
+
+#photoshoot-header h1 {
+  font-family: Arial Black;
+}
+
+#photoshoot-content {
+  width: 100%;
+}
+
+#photoshoot-content #timer-circle {
+  text-align: center;
+  border: 5px solid #000;
+  border-radius: 100%;
+  width: 450px;
+  height: 450px;
+  margin: 0 auto;
+}
+
+#photoshoot-content #timer-circle h1 {
+  margin-top: 70px;
+  font-family: Arial Black;
+  font-size: 200px;
+}
+
+#photoshoot-content #timer-circle h2 {
+  margin-top: 130px;
+  font-family: Arial Black;
+  font-size: 100px;
+}
+
+#photoshoot-content #timer-circle img {
+  margin-top: 140px;
+  width: 70%;
+}
+
+#photoshoot-content #photo-array {
+  margin-top: 100px;
+  margin-left: 150px;
+}
+
+#photoshoot-content #photo-array ul {
+  width: 100%;
+}
+
+#photoshoot-content #photo-array ul li {
+  display: inline-block;
+  margin-right: 100px;
+}
+
+#photoshoot-content #photo-array ul li div {
+  width: 300px;
+  height: 300px;
+  border: 5px solid #000;
+}
+/*# sourceMappingURL=photoshoot.css.map */

@@ -6,8 +6,9 @@ import "../components/component_styles/payment.css"
 
 const Payment = (selectionData) => {
     const [paymentPageState, setPaymentPageState] = useState(true);
-    const [PhotoPageState, setPhotoPageState] = useState(false);
+    const [photoPageState, setPhotoPageState] = useState(false);
     const [dollarAmount, setDollarAmount] = useState(5.00);
+    const [hasPaid, setHasPaid] = useState(false);
 
     useEffect(() => {
         const frameQty = parseFloat(selectionData.frameData);
@@ -21,7 +22,9 @@ const Payment = (selectionData) => {
         } else if (frameQty === 8) {
             setDollarAmount(12.50);
         }
-    });
+
+        setHasPaid(true); //test
+    }, []);
 
     //PAYMENT SCRIPT GOES HERE
 
@@ -39,10 +42,19 @@ const Payment = (selectionData) => {
                         <h2> Frame amount: {selectionData.frameData} strips </h2>
                         <h2> Frame colour: {selectionData.colorData} </h2> 
                     </div>
+
+                    <button id = "test-button" onTouchStart={(e) => { //test
+                        setHasPaid(true)
+                        setPaymentPageState(false);
+                        setPhotoPageState(true);
+                        console.log("paid", hasPaid)
+                        console.log("payState", paymentPageState)
+                        console.log("photoState", photoPageState)
+                    }}> TEST BUTTON </button>
                 </div>
             }
 
-            {PhotoPageState ? <Photoshoot /> : null}
+            {photoPageState ? <Photoshoot /> : null}
         </React.Fragment>
     )
 }
