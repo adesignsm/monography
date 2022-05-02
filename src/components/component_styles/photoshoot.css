@@ -37,22 +37,27 @@
 }
 
 #photoshoot-content #photo-array {
-  margin-top: 100px;
+  margin-top: -120px;
   margin-left: 150px;
 }
 
-#photoshoot-content #photo-array ul {
-  width: 100%;
+#photoshoot-content #photo-array canvas {
+  width: 346px;
+  height: 260px;
+  opacity: 0;
 }
 
 #photoshoot-content #photo-array ul li {
+  width: 40%;
+  list-style: none;
   display: inline-block;
-  margin-right: 100px;
+  margin-right: -300px;
 }
 
-#photoshoot-content #photo-array ul li div {
-  width: 300px;
-  height: 300px;
+#photoshoot-content #photo-array ul li img {
+  width: 346px;
+  height: 260px;
+  display: inline;
   border: 5px solid #000;
 }
 /*# sourceMappingURL=photoshoot.css.map */
